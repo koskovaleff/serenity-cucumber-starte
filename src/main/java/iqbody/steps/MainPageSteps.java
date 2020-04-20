@@ -21,4 +21,35 @@ public class MainPageSteps {
     public void check_reg_button() {
         page.findLoginButton2();
     }
+
+    @Step
+    public void click_training() {
+        page.openTrainingMenu();
+    }
+
+    @Step
+    public void click_nutrition() {
+        page.openNutritionMenu();
+    }
+
+    @Step
+    public void click_knowledge_base() {
+        page.openKnowledgeBaseMenu();
+    }
+
+    @Step
+    public void click_about_us() {
+        page.openAboutUsMenu();
+    }
+
+    @Step
+    public void click_online_trainer() {
+        page.openOnlineTrainerPage();
+    }
+
+    @Step
+    public void training_mega_menu_visible() {
+        page.TrainingMegaMenu();
+    }
+
 }
