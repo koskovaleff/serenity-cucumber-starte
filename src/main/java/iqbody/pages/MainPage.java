@@ -35,6 +35,18 @@ public class MainPage extends PageObject {
     @FindBy(xpath = "/html/body/div[2]/nav/div[2]/div[2]")
     public WebElementFacade TrainingMegaMenu;
 
+    @FindBy(xpath = "/html/body/div[2]/nav/div[2]/div[1]")
+    public WebElementFacade NutritionMegaMenu;
+
+    @FindBy(xpath = "/html/body/div[2]/nav/div[1]/div/div[1]/div/div[2]/div/ul/li[4]/ul/li[5]/a")
+    public WebElementFacade KnowledgeBaseMenu;
+
+    @FindBy(xpath = "/html/body/div[2]/nav/div[1]/div/div[1]/div/div[2]/div/ul/li[5]/ul/li[5]/a")
+    public WebElementFacade AboutUsMenu;
+
+    @FindBy(xpath = "/html/body/div[2]/div[2]/header/div/div[2]")
+    public WebElementFacade OnlineTrainerMenu;
+
     public void findRegisterButton () {
         LoginButton.click();
         RegisterButton.shouldBeVisible();
@@ -72,6 +84,22 @@ public class MainPage extends PageObject {
 
     public void TrainingMegaMenu () {
         TrainingMegaMenu.shouldBeVisible();
+    }
+
+    public void nutritionMegaMenu () {
+        NutritionMegaMenu.shouldBeVisible();
+    }
+
+    public void knowledgeBaseMenu () {
+        KnowledgeBaseMenu.shouldBeVisible();
+    }
+
+    public void aboutUsMenu () {
+        AboutUsMenu.shouldBeVisible();
+    }
+
+    public void onlineTrainerMenu () {
+        OnlineTrainerMenu.shouldBeVisible();
     }
 
 }

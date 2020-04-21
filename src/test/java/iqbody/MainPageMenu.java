@@ -22,4 +22,45 @@ public class MainPageMenu {
         steps.training_mega_menu_visible();
     }
 
+    @When("User click Nutrition Menu")
+    public void userClickNutritionMenu() {
+        steps.click_nutrition();
+    }
+
+    @Then("User should see all Nutrition Menu")
+    public void userShouldSeeAllNutritionMenu() {
+        steps.nutrition_mega_menu_visible();
+    }
+
+    @When("User click Knowledge Base Menu")
+    public void userClickKnowledgeBaseMenu() {
+        steps.click_knowledge_base();
+    }
+
+    @Then("User should see all Knowledge Base Menu")
+    public void userShouldSeeKnowledgeBaseMenu() {
+        steps.knowledge_base_menu_visible();
+    }
+
+    @When("User click About Us Menu")
+    public void userClickAboutUsMenu() {
+        steps.click_about_us();
+    }
+
+    @Then("User should see all About Us menu")
+    public void userShouldSeeAboutUsMenu() {
+        steps.about_us_menu_visible();
+    }
+
+    @When("User click Online Trainer")
+    public void userClickOnlineTrainer() {
+        steps.click_online_trainer();
+    }
+
+    @Then("User should see Online Trainer page")
+    public void userShouldSeeOnlineTrainerPage() {
+        steps.online_trainer_menu_visible();
+    }
+
+
 }

@@ -52,4 +52,24 @@ public class MainPageSteps {
         page.TrainingMegaMenu();
     }
 
+    @Step
+    public void nutrition_mega_menu_visible() {
+        page.nutritionMegaMenu();
+    }
+
+    @Step
+    public void knowledge_base_menu_visible() {
+        page.knowledgeBaseMenu();
+    }
+
+    @Step
+    public void about_us_menu_visible() {
+        page.aboutUsMenu();
+    }
+
+    @Step
+    public void online_trainer_menu_visible() {
+        page.onlineTrainerMenu();
+    }
+
 }
